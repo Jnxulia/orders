@@ -20,7 +20,7 @@ docker-compose up
 > ### Si no desea instalarlo via docker debe hacer lo siguiente:
 
 
-##  Frontend
+##  Backend
 ### Requisitos
 
 
