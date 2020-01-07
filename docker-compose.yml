@@ -1,0 +1,16 @@
+version: '3' 
+# Define the services/containers to be run
+services:
+  rest_api:
+    build: test-nestjs
+    ports:
+        - '3000:3000'
+    command: npm start
+    depends_on: 
+      - mongodb   
+  mongodb:
+    build: mongodb 
+
+    ports:
+      - '27017:27017'
+
