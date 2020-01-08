@@ -8,9 +8,12 @@ services:
     command: npm start
     depends_on: 
       - mongodb   
+  data_db:
+      build: mongodata
+      links:
+        - mongodb
   mongodb:
-    build: mongodb 
-
+    image: mongo:4.0.0 
     ports:
       - '27017:27017'
 
